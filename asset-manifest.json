@@ -1,0 +1,13 @@
+{
+  "main.css": "/kaze/static/css/main.7ccf35ff.chunk.css",
+  "main.js": "/kaze/static/js/main.40cdd969.chunk.js",
+  "main.js.map": "/kaze/static/js/main.40cdd969.chunk.js.map",
+  "static/js/1.1aec539e.chunk.js": "/kaze/static/js/1.1aec539e.chunk.js",
+  "static/js/1.1aec539e.chunk.js.map": "/kaze/static/js/1.1aec539e.chunk.js.map",
+  "runtime~main.js": "/kaze/static/js/runtime~main.32d12fae.js",
+  "runtime~main.js.map": "/kaze/static/js/runtime~main.32d12fae.js.map",
+  "static/css/main.7ccf35ff.chunk.css.map": "/kaze/static/css/main.7ccf35ff.chunk.css.map",
+  "index.html": "/kaze/index.html",
+  "precache-manifest.f34eca5bedaeef3fa69cee20cc70e97a.js": "/kaze/precache-manifest.f34eca5bedaeef3fa69cee20cc70e97a.js",
+  "service-worker.js": "/kaze/service-worker.js"
+}

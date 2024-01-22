@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="/kaze/manifest.json">
+    <link rel="shortcut icon" href="/kaze/icon/favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" href="/kaze/icon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/kaze/icon//icon-192x192.png">
+    <title>koshi_momi_counter</title>
+    <link href="/kaze/static/css/main.7ccf35ff.chunk.css" rel="stylesheet">
+
+X
+
+
+
+
+
+    </head>
+    <noscript></noscript>
+    <h3 style="text-align:center" ;>帯緑色歩合を推定<br>（2024年4月）<br>風さやか専用（対象範囲１～40％）</h3>
+    <div class="container"><div style="text-align:center"><input type="button" value="再読み込み" onclick="window.location.reload(!1)"/></div>
+    </div><section><p style="text-align:center" id="console_log"></p><h3 style="text-align:center" ;>40％を超える場合も計算されますが、<br>当アプリの使用想定範囲外です。</h3>
+    <table id="tbl"><tr>
+        <th></th><th>緑色の籾の数</th><th>推定される帯緑色籾歩合（％）</th><th>推定値の平均（％）</th>
+        </tr>
+        </table>
+        <div class="center"><a id="download" href="#" download="data.csv" onclick="handleDownload()">ここをタップして<br>csvファイルのダウンロード</a></div></section>
+        <h3 style="text-align:center" ;>10か所以上、なるべく多くの穂を調べてください。</h3>
+        <div id="root"></div>
+        <main>
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-30B3CVDHZH"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-30B3CVDHZH');
+            </script>
+
+            <script>
+                // manifestのlinkタグを生成
+                function setManifest(path) {
+                    const manifest = document.createElement('link');
+                    manifest.rel = 'manifest';
+                    manifest.href = path;
+                    document.head.appendChild(manifest);
+                }
+        
+                // OSに応じて読み込むmanifestを変更
+                var userAgent = navigator.userAgent.toLowerCase();
+                if (userAgent.indexOf("iphone") > 0 || userAgent.indexOf("ipad") > 0) {
+                    setManifest('manifest_ios.json')
+                } else {
+                    setManifest('manifest.json')
+                }
+                </script> 
+        
+        
+        
+        
+        
+        
+        
+            <script>"use strict";console.log=function(e){document.getElementById("console_log").innerHTML+=e+"<br>"}</script></main>
+            <script>function handleDownload(){for(var e=new Uint8Array([239,187,191]),n=document.getElementById("tbl"),o="",t=0;t<n.rows.length;t++)for(var l=0;l<n.rows[t].cells.length;l++)o+=n.rows[t].cells[l].innerText,l==n.rows[t].cells.length-1?o+="\n":o+=",";var a=new Blob([e,o],{type:"text/csv"});window.navigator.msSaveBlob?window.navigator.msSaveBlob(a,"data.csv"):document.getElementById("download").href=window.URL.createObjectURL(a)}</script>
+            <script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/kaze/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script>
+            <script src="/kaze/static/js/1.1aec539e.chunk.js"></script>
+            <script src="/kaze/static/js/main.40cdd969.chunk.js"></script>
+
+
+
+
+
+                <!-- サービスワーカー追加-->
+            <script>
+
+                if ('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('serviceWorker.js').then(reg => {
+                    console.log('サービスワーカーを登録しました', reg);
+                    }).catch(err => {
+                    console.log('登録失敗', err);
+                    });
+                }
+                </script>
+                    </html>

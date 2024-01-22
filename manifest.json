@@ -1,0 +1,17 @@
+{	"name": "nagano-ushi_kaze",
+	"short_name": "kaze",
+	"description": "sample",
+	"icons": [
+		{
+		"src": "/kaze/icon/icon-192x192.png",
+		"sizes": "256x256",
+		"type": "image/png",
+		"purpose": "any"
+		}
+		
+		],
+	"start_url": "/kaze/index.html",
+	"display": "standalone",
+	"theme_color": "#317EFB",
+	"orientation": "any", 
+	"background_color": "#0000FF"}
